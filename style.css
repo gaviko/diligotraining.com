@@ -1,0 +1,53 @@
+.Logo{
+    margin-top: 75px;
+
+
+}
+
+
+body{
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+    background-size: cover;
+   
+    
+}
+
+
+#nav{
+
+    margin-top: 75px;
+
+    margin-left: 25px;
+    width: 400px;
+    height: 150px;   
+         
+}
+
+
+a{
+    text-decoration-line: none;
+    color: black;
+    
+}
+
+
+ul{
+
+    list-style-type: none;
+
+}
+
+li{
+    padding: 5px;
+
+}
+
+
+#footer{
+    margin-top: 100px;
+    margin-left: 60px;
+    
+    
+}
