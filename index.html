@@ -2,43 +2,152 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
+
 	<meta charset ="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
 	<title> Diligo Training 
 	</title>
-	<meta name="description" content="Decentralised learning for affordable progress.">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
 
+	<meta name="description" content="Decentralised learning for affordable progress.">
+	<link rel="stylesheet" href="css/style.css">
+	<script data-ad-client="ca-pub-1130920882109542" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<link rel="icon" type="image/png" href="favicon.png" sizes="32x32" />
 	
 </head>
 
 
-<body background="">
+<body>
+	<div class = "container">
 
-<div class="Logo"><a href><img src="Diligo Logo.png" height="125px"style="width: 100%;""></a>	</div>
+		<header>
+
+		    <a href="#"><img src="Images/LogoHeader.png" alt="Diligo Training Logo" class="logo"></a>
 
 
-<div id="nav">
+		 
+			<nav>
 
-	<ul>
-		<strong><b><li><a href=""> About Us</a></li>
-		<li><a href=""> Decentralising Learning</a></li>
-		<li><a href=""> Namibia NOW</a></li>
-		<li><a href=""> Contact Us</a></li>
-		<li><a href=""> Donate</a></li></b></strong>
-	</ul>
+			
+				<a href = "#" class="hide-desktop">
+				 <img src="Images/ham.svg" alt="toggle-menu" class="menu" id="menu">
+			    </a>
+
+			 <ul class="show-desktop hide-mobile" id="nav">
+
+			   <li id="exit" class="exit-btn hide-desktop">
+				 <img src="Images/closeicon.svg" alt="exitmenu">
+			   </li>
+			   <li><a href="#"> HOME </a></li>
+			   <li><a href="#"> EXPLORE </a></li>
+			   <li><a href="#"> LOGIN/SIGN-IN </a></li>
+			   <li><a href="#"> HELP US </a></li>
+
+			 </ul>
 	
-</div>
-<br>
-<br>
-<br>
-<div id="footer"><a href="">Developed by Gavin Kolz <br> © 2020</a></div>
+		    </nav>
+
+		</header>	  
+		
+		<section>
+
+			<h2> Decentralising Learning in Namibia </h2>
+
+			<p class="subhead">A database of comprehensive standard procedures in the seven major industries in Namibia. Relevant and readily accessible training material.</p>
+		  
+			<img src="Images/DiligoFlower.svg" alt="scroll down" class="scroll hide-mobile show-desktop">
+		
+		</section>
+
+		
+          
+	</div>
+	
+	<div class="bluecontainer">
+
+		<div class="container">
+
+			<ul>
+				<li>
+					<img src="Images/calendar.svg" alt="Open Access" class="calendar">
+					<p>Productivity is a measure of efficiency of a person completing a task. We often assume that productivity means getting more things done each day. Wrong. Productivity is getting important things done consistently!</p>
+				</li>
+				<li>
+					<img src="Images/cost.svg" alt="Open Access">
+					<p>Partnership working coordinates action between organisations and allows opportunities to exchange views, supporting innovation and providing additional momentum to get things done!</p>
+				</li>
+				<li><img src="Images/mobile-layout.svg" alt="Open Access">
+					<p>Persistence describes the ability to push and push toward the finish line, even if the finish line seems comically out of reach. It's about tenacity and stubbornness!</p>
+				</li>
+			</ul>
+
+		</div>
 
 
+	</div>
+
+	<div class="gray-container">
+
+		<div class="container">
+
+			<ul>
+
+				<li>
+					<figure>
+						<img src="Images/webmaster.jpg" alt="Gavin Kolz - Founder of Diligo Training" class="webmaster">
+						<blockquote>Abigail Adams once said, <i>"Learning is not attained by chance, it must be sought after with ardor and diligence"</i><br><br> Major economies on earth tend to have highly productive educational systems that are results driven. Foundational to all innovation is an intense curiosity and passion for learning. I hope this website can be a tool to produce value in Namibia. </blockquote>
+						<figcaption>Gavin Kolz </figcaption>
+					</figure>
+				</li>
+				
+			</ul>
+
+		</div>
+
+	</div>
+	<div class="container"> 
+
+		<h3>Start your journey today.</h3>
+		<a href="#" class="cta">Get Learning</a>
+
+	</div>
+
+	<footer>
+		<div class="footer">
+			<div class="container">
+				
+					<p class="address">Windhoek<br>Namibia
+					</p>
+
+					<ul class="footer-links">
+						<li><a href="#">
+							    Terms and Conditions
+						    </a>
+					    </li>
+				    </ul>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		
+		var menu = document.getElementById("menu");
+		var nav = document.getElementById("nav");
+		var exit = document.getElementById("exit")
+
+		menu.addEventListener("click", function(e){
+			nav.classList.toggle('hide-mobile');
+			e.preventDefault();
+		})
+
+		exit.addEventListener("click", function(e){
+			nav.classList.add('hide-mobile');
+			e.preventDefault();
+		})
+
+	</script>
 
 </body>
 

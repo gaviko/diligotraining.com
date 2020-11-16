@@ -1,53 +1,373 @@
-.Logo{
-    margin-top: 75px;
-
-
-}
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
 
 body{
 
+    margin:0;
     font-family: 'Montserrat', sans-serif;
-    font-size: small;
-    background-size: cover;
-   
-    
-}
 
-
-#nav{
-
-    margin-top: 75px;
-
-    margin-left: 25px;
-    width: 400px;
-    height: 150px;   
-         
-}
-
-
-a{
-    text-decoration-line: none;
-    color: black;
-    
 }
 
 
 ul{
+   list-style-type: none;
+   margin:0;
+   padding:0; 
+   
+}
 
-    list-style-type: none;
+.container{
+    text-align: center;
+    padding: 2em 2em;
+
+}
+    
+
+.logo{
+    width:210px;
 
 }
 
-li{
-    padding: 5px;
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10%;
 
 }
 
+.menu{
+    width: 30px;
+    margin-top: 45%;
 
-#footer{
-    margin-top: 100px;
-    margin-left: 60px;
+
+}
+
+p, blockquote{
+
+    font-size:.9em;
+    line-height: 1.6em;
+}
+
+.hide-mobile{
+
+    display: none;
+
+}
+
+.bluecontainer{
+    background-color:lightgray;
+    width:100%;
+    color:#262262;;
+    border-radius: 55px;
+    padding:4em 0 2em;
+    margin-top:0;
+}
+
+.bluecontainer ul li{
+
+    margin-bottom: 3em;
+   
+}
+
+.bluecontainer ul li p{
+
+    padding:0.5em;
+   
+}
+
+.bluecontainer img{
+
+    width:20%;
+
+}
+
+.bluecontainer ul li:nth-child(2) img {
+    width:25%;
+    
+}
+
+.bluecontainer ul li:nth-child(3) img{
+    width:13%;
+}
+
+.gray-container{
+    padding: 0;
+}
+
+.footer{
+    background-color: #262262;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    color: blanchedalmond;
+
+}
+
+.footlogo{
+    width:7%;
+}
+
+.footer-links a{
+
+    color: wheat;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+.container-cta{
+    text-align: center;
     
     
+}
+
+h3{
+    margin-top: -4em;
+}
+
+.cta {
+    color: white;
+    text-decoration: none;
+    padding:10px;
+    background-color: #00c2ff;
+    border-radius: 25px;
+    width: calc(100%-1em);
+    display:block;
+    font-size: 1.5em;
+    margin:3% auto 7%;
+
+    
+    
+}
+
+figure{
+    margin:5%;
+    padding:0;
+}
+
+figcaption{
+    font-weight: bold;
+    margin-bottom: 2em;
+}
+
+nav ul{
+    position:fixed;
+    width:60%;
+    top:0;
+    right:0;
+    text-align: left;
+    background-color: rgb(36, 41, 44);
+    height: 100%;
+    z-index: 5;
+    padding-top: 3em;
+    padding-left: 2em;
+}
+
+nav ul li a{
+    color: azure;
+    text-decoration: none;
+    display:block;
+    width: 100%;
+    padding: 1em 2em;
+    background-color: rgb(49, 55, 59);
+}
+
+nav ul li a:hover{
+    background-color: darkgray;
+}
+
+
+.exit-btn:hover{
+    background-color:darkgray;
+
+}
+
+.exit-btn{
+    padding: 0 1.4em;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 650px){
+
+h2{
+    font-size: 2em;
+    margin: 0;
+
+}
+
+.subhead{
+    font-size: 1.3em;
+    margin-bottom: 10%;
+}
+
+.bluecontainer{
+    margin:0;
+}
+
+.bluecontainer img{
+    width: 55%;
+}
+
+.bluecontainer ul li:nth-child(3) img {
+    width:45%;
+   
+}
+
+.bluecontainer ul li:nth-child(2) img {
+    width:75%;
+    margin-bottom: 20px;
+   
+    
+}
+
+.bluecontainer ul{
+    display: flex;
+    margin-top: -1em;
+    align-items: center;
+
+}
+
+.bluecontainer ul li{
+    margin-bottom: 0;
+}
+
+.bluecontainer ul li p{
+    padding: 0 0.8em;
+}
+
+nav ul{
+    width: 40%;
+}
+
+}
+
+@media  only screen and (min-width:875px){
+
+
+
+.subhead{
+    margin-top: 10%;
+    
+
+}
+.bluecontainer{
+
+    margin: 0 0 4% 0;
+}
+
+.gray-container{
+    margin: 4% 0 0;
+}
+
+
+
+
+}
+
+@media  only screen and (min-width:1024px){
+
+.cta {
+    width: 50%;
+}
+
+.container{
+
+    width:80%;
+    margin: 0 auto;
+}
+
+.show-desktop{
+
+    display: block;
+    margin: 0 auto 13% auto;
+}
+.hide-desktop{
+
+    display: none;
+}
+
+nav ul{
+
+    position: inherit;
+    width: auto;
+    background: none;
+    height: auto;
+    display: flex;
+    padding-top: 0%;
+
+}
+
+nav ul li{
+
+    float: left;
+    
+
+}
+
+nav ul li a{
+    
+    color: black;
+    background-color: inherit;
+    padding: 1em 2em;
+ 
+    
+    
+}
+
+nav ul li a:hover{
+
+    background-color: inherit;
+    color: darkgray;
+   
+}
+
+.scroll{
+
+    width: 50px;
+    animation: move 2s infinite alternate;
+}
+
+@keyframes move {
+
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(40px);
+        
+    }
+}
+
+}
+
+@media only screen and  (min-width:1600px){
+
+.container{
+    
+    width: 70%;
+
+}
+
+.bluecontainer{
+
+    padding: 7em 0 2em;
+}
+
+.bluecontainer ul li p, blockquote{
+    font-size: 1.3em;
+}
+
+.gray-container{
+
+    padding: 6em 0 4em;
+}
+
+h2{
+
+    margin-top: 4em;
+}
+
+.bluecontainer img{
+
+    width: 30%;
+}
+
+
 }
